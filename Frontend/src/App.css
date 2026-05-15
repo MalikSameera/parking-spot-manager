@@ -1,0 +1,100 @@
+/* Black Theme Styling */
+.container {
+  background-color: #0f172a;
+  color: #f8fafc;
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  color: #38bdf8;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Parking Grid */
+.parking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Parking Spot Card */
+.parking-spot {
+  background: #1e293b;
+  border: 2px solid #334155;
+  border-radius: 15px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.parking-spot:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+}
+
+/* Status Colors */
+.available {
+  border-left: 8px solid #22c55e;
+}
+
+.occupied {
+  border-left: 8px solid #ef4444;
+}
+
+.status-text {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.available .status-text { color: #22c55e; }
+.occupied .status-text { color: #ef4444; }
+
+/* Booking Form (Modal Style) */
+.booking-card {
+  background: #1e293b;
+  border: 1px solid #38bdf8;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: white;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-book { background: #38bdf8; color: #0f172a; }
+.btn-book:hover { background: #0ea5e9; }
+
+.btn-release { background: #ef4444; color: white; margin-top: 10px; }
+.btn-release:hover { background: #dc2626; }
+
+.btn-cancel { background: #64748b; color: white; margin-left: 10px; }

@@ -1,38 +1,55 @@
--Parking Spot Management System
+# 🚗 Pro Parking Spot Manager
 
-A robust backend solution for managing parking availability in real-time. Built using Node.js, Express, and MongoDB, this system streamlines vehicle tracking and parking zone management.
+A professional, full-stack Parking Management System built with the **MERN** stack. This application features a sleek dark-themed dashboard, real-time parking slot tracking, and secure user authentication.
 
--Project Overview
-Finding a parking spot in busy areas is a challenge. This system provides a digital map of parking zones, allowing administrators to monitor which spots are vacant and which are occupied by specific vehicles.
+## ✨ Features
+* **Secure Authentication:** User login and registration using **JWT** (JSON Web Tokens).
+* **Interactive Dashboard:** Real-time visualization of available and occupied parking spots.
+* **Spot Management:** Book spots with vehicle numbers and release them with a single click.
+* **Dynamic Grid:** Responsive layout that adapts to different screen sizes.
+* **Premium Dark UI:** Modern black-themed interface for a high-end feel.
 
--Tech Stack
-* Backend: Node.js, Express.js
-* Database: MongoDB
-* API Testing: Postman
-* Environment: Dotenv for secure configuration
-* Middleware: CORS & Body-Parser
+## 🛠️ Tech Stack
+* **Frontend:** React.js, Vite, Axios, CSS3
+* **Backend:** Node.js, Express.js
+* **Database:** MongoDB
+* **Security:** JWT, Bcrypt.js
 
--Key Features
-* Spot Allocation: Register parking spots within specific zones (e.g., Zone-A, Zone-B).
-* Live Status Updates: Real-time tracking of `isAvailable` status.
-* Vehicle Mapping: Link specific vehicle numbers to parking spots.
-* Full CRUD Support: Endpoints for adding, viewing, updating, and removing parking data.
+## 🚀 Getting Started
 
+### 1. Prerequisites
+* Node.js installed
+* MongoDB running locally or on Atlas
 
--API Testing Screenshots
+### 2. Backend Setup
+```bash
+# Navigate to backend folder
+cd backend
 
-1. Registering a New Parking Spot (POST)
-Successfully added a new parking spot record with zone and vehicle details.
-![Create Spot](screenshots/create1.png)
+# Install dependencies
+npm install
 
-2. Fetching All Parking Data (GET)
-Retrieving the complete list of parking spots from the cloud database.
-![Fetch All Spots](screenshots/getAll.png)
+# Start the server
+node index.js
 
-3. Updating Spot Status (PUT)
-Updating the availability status when a vehicle enters or leaves the spot.
-![Update Status](screenshots/update.png)
+```
+### 2. Frontend Setup
+```bash
+# Navigate to frontend folder
+cd frontend
 
-4. Removing a Record (DELETE)
-Deleting a parking spot record from the system.
-![Delete Spot](screenshots/delete.png)
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+```
+
+## 📸 Preview
+
+-The dashboard displays parking slots as interactive cards:
+
+-Green Border: Available for booking.
+
+-Red Border: Occupied (shows vehicle number and release option).
