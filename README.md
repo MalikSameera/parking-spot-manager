@@ -56,7 +56,7 @@ The **Pro Parking Spot Manager** solves these issues by digitizing the entire pa
 ```json
 {
   "email": "malik@example.com",
-  "password": "securepassword123"
+  "password": "malik123"
 }
 ```
 * **Response:** Returns a valid JWT token and user details.
